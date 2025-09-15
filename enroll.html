@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Enroll - Payment Details | GYB E-commerce Masterclass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body { background: var(--bg); }
+    .enroll-page { padding: 54px 0; }
+    .enroll-card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); max-width: 720px; margin: 0 auto; }
+    .enroll-title { margin: 0 0 12px; font-size: 28px; }
+    .enroll-lead { color: var(--muted); margin: 0 0 16px; }
+    .details { display: grid; gap: 10px; margin: 14px 0 18px; }
+    .details div { background: var(--panel-2); border: 1px dashed var(--border); border-radius: 10px; padding: 12px; }
+    .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .value { font-weight: 700; margin-top: 6px; }
+    .actions { display: grid; gap: 12px; margin-top: 10px; }
+    .back { color: var(--accent); text-decoration: none; text-align: center; }
+    .back:hover { text-decoration: underline; }
+  </style>
+  <script>
+    // Configure your WhatsApp number and default message
+    const WHATSAPP_NUMBER = '2347044006293'; // TODO: replace with your number
+    const DEFAULT_MESSAGE = 'Hello, I just paid for the GYB E-commerce Masterclass. Here is my proof of payment:';
+
+    function openWhatsAppProof() {
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
+      window.open(url, '_blank', 'noopener');
+    }
+  </script>
+  <script src="./script.js" defer></script>
+  <style>
+    /* Override CTA behavior here to avoid rewriting links */
+    [data-cta] { pointer-events: auto; }
+  </style>
+  <link rel="icon" href="data:," />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Payment details and WhatsApp confirmation for the GYB E-commerce Masterclass." />
+  <meta property="og:title" content="Enroll - GYB E-commerce Masterclass" />
+  <meta property="og:description" content="Send proof of payment on WhatsApp for instant access." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <style>
+    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  </style>
+  <link rel="canonical" href="" />
+  <link rel="apple-touch-icon" href="data:," />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://wa.me; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://www.youtube.com https://youtube.com;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+</head>
+<body>
+  <main class="enroll-page">
+    <div class="container">
+      <a class="back" href="./index.html#enroll-section" style="font-size:12px; display:inline-block; margin-bottom:10px;">← Go back</a>
+      <div class="enroll-card" role="region" aria-labelledby="enroll-title">
+        <h1 id="enroll-title" class="enroll-title">Payment Details</h1>
+        <p class="enroll-lead">Make a transfer to the account below. After payment, click the WhatsApp button to send your proof and get access to the masterclass.</p>
+
+        <div class="details">
+          <div>
+            <div class="label">Account Name</div>
+            <div class="value">Ramadan Aramide</div>
+          </div>
+          <div>
+            <div class="label">Bank Name</div>
+            <div class="value">Moniepoint</div>
+          </div>
+          <div>
+            <div class="label">Account Number</div>
+            <div class="value">9039518528</div>
+          </div>
+          <div>
+            <div class="label">Amount</div>
+            <div class="value">#5,000</div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary btn-xl" onclick="openWhatsAppProof()">I have paid - Send proof on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+

@@ -88,8 +88,8 @@ body {
 .scarcity strong { color: var(--text); font-variant-numeric: tabular-nums; }
 .scarcity .label { opacity: 0.9; }
 
-.video-wrapper { position: relative; border-radius: var(--radius); background: linear-gradient(180deg, #1a2440, #0e1424); border: 1px solid var(--border); min-height: 220px; box-shadow: var(--shadow); overflow: hidden; }
-.video-poster { display: grid; place-items: center; color: var(--muted); height: 100%; letter-spacing: 0.2px; }
+.video-wrapper { position: relative; border-radius: var(--radius); background: linear-gradient(180deg, #1a2440, #0e1424); border: 1px solid var(--border); width: 100%; aspect-ratio: 9 / 16; max-width: 480px; margin: 0 auto; box-shadow: var(--shadow); overflow: hidden; }
+.video-poster { display: grid; place-items: center; color: var(--muted); height: 80%; letter-spacing: 0.2px; }
 
 /* Cards */
 .cards { display: grid; gap: 16px; }

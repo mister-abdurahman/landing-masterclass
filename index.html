@@ -21,7 +21,7 @@
     <a href="#curriculum" class="sr-link">Curriculum</a>
     <a href="#social-proof" class="sr-link">Social Proof</a>
     <a href="#bonus" class="sr-link">Bonus</a>
-    <a href="#cta-final" class="sr-link">Enroll</a>
+    <a href="#enroll-section" class="sr-link">Enroll</a>
   </nav>
 
   <header class="site-header" role="banner">
@@ -30,7 +30,7 @@
         <span class="logo-dot" aria-hidden="true"></span>
         <span class="brand-name">GYB E-commerce Masterclass</span>
       </a>
-      <a id="cta-header" class="btn btn-primary" href="#enroll" data-cta>Secure My Spot for #5,000</a>
+      <a id="cta-header" class="btn btn-primary" href="#enroll-section">Secure My Spot for #5,000</a>
     </div>
   </header>
 
@@ -43,7 +43,7 @@
           <p class="subheadline">Tired of messy DMs and scattered sales? In this step-by-step masterclass, learn how to automate your business and launch a stunning e‑commerce website for a fraction of the cost.</p>
 
           <div class="hero-cta">
-            <a id="cta-hero" class="btn btn-primary btn-lg" href="#enroll" data-cta>Secure My Spot for #5,000</a>
+            <a id="cta-hero" class="btn btn-primary btn-lg" href="#enroll-section">Secure My Spot for #5,000</a>
             <div class="scarcity">
               <div class="scarcity-item">
                 <span class="label">Only</span>
@@ -59,9 +59,15 @@
         </div>
 
         <div class="hero-media">
-          <div class="video-wrapper" aria-label="Intro video placeholder" role="img">
-            <!-- Replace src with your promo video URL or embed -->
-            <div class="video-poster">1:30 Promo Video Placeholder</div>
+          <div class="video-wrapper" aria-label="Intro video" role="region">
+            <iframe
+              src="https://www.youtube.com/embed/1RGVLkmRzcE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="width:100%; height:100%; display:block; border:0;"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -106,7 +112,7 @@
         </ul>
 
         <div class="cta-inline">
-          <a id="cta-mid" class="btn btn-primary" href="#enroll" data-cta>Join Now for #5,000</a>
+          <a id="cta-mid" class="btn btn-primary" href="#enroll-section">Join Now for #5,000</a>
         </div>
       </div>
     </section>
@@ -149,7 +155,7 @@
           <p class="lead">Enroll today to receive exclusive templates, checklists, and a private Q&A session. Get everything for just <strong>#5,000</strong> while this offer lasts.</p>
         </div>
         <div class="cta-stack">
-          <a id="cta-bonus" class="btn btn-primary btn-lg" href="#enroll" data-cta>Secure My Spot for #5,000</a>
+          <a id="cta-bonus" class="btn btn-primary btn-lg" href="#enroll-section">Secure My Spot for #5,000</a>
           <p class="tiny">Backed by our no‑fluff promise: practical, step‑by‑step guidance you can implement immediately.</p>
         </div>
       </div>
@@ -159,7 +165,7 @@
     <section id="cta-final" class="section final-cta" aria-labelledby="final-title">
       <div class="container final-inner">
         <h2 id="final-title" class="section-title">Ready to Transform Your Business?</h2>
-        <a id="cta-final-btn" class="btn btn-primary btn-xl" href="#enroll" data-cta>Secure My Spot for #5,000</a>
+        <a id="cta-final-btn" class="btn btn-primary btn-xl" href="#enroll-section">Secure My Spot for #5,000</a>
       </div>
     </section>
 
@@ -186,14 +192,23 @@
       </div>
     </section>
 
-    <!-- Enrollment anchor (configurable CTA link target) -->
+    <!-- Enrollment anchor (legacy) -->
     <div id="enroll" class="enroll-anchor" aria-hidden="true"></div>
+
+    <!-- New Enroll Section -->
+    <section id="enroll-section" class="section final-cta" aria-labelledby="enroll-section-title">
+      <div class="container final-inner">
+        <h2 id="enroll-section-title" class="section-title">Ready to enroll</h2>
+        <p class="lead">Proceed to view payment details and complete your enrollment.</p>
+        <a class="btn btn-primary btn-xl" href="./enroll.html">Continue to Payment Details</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> GYB E-commerce. All rights reserved.</p>
-      <a href="#hero" class="to-top">Back to top</a>
+      <p>© <span id="year"></span> GYB E-commerce. <br/> All rights reserved.</p>
+      <a href="#hero" class="to-top" aria-label="Back to top" title="Back to top">↑</a>
     </div>
   </footer>
 

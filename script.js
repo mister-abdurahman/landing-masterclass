@@ -98,8 +98,11 @@
   }
 
   function attachCta(url) {
+    // Only apply to elements that explicitly opt in via data-cta and are not in-page anchors
     const links = document.querySelectorAll('[data-cta]');
     links.forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      if (href.startsWith('#')) return; // keep in-page anchors intact
       a.setAttribute('href', url);
       a.setAttribute('rel', 'noopener noreferrer');
       a.setAttribute('target', '_blank');
