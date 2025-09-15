@@ -16,10 +16,10 @@
 
   const DEFAULTS = {
     // 72 hours from first visit
-    countdownHours: 72,
-    initialSlots: 37,
+    countdownHours: 5,
+    initialSlots: 8,
     // Example CTA: Replace with WhatsApp or payment link
-    ctaUrl: 'https://wa.me/2348012345678?text=I%20want%20to%20secure%20my%20spot%20for%20%235,000'
+    ctaUrl: 'https://wa.me/2347044006293?text=I%20want%20to%20secure%20my%20spot%20for%20%235,000'
   };
 
   const $ = (sel) => document.querySelector(sel);
