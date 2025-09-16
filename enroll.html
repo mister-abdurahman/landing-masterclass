@@ -29,6 +29,7 @@
     const DEFAULT_MESSAGE = 'Hello, I just paid for the GYB E-commerce Masterclass. Here is my proof of payment:';
 
     function openWhatsAppProof() {
+      fbq('track', 'Purchase', {currency: "NGN", value: 5000});
       const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
       window.open(url, '_blank', 'noopener');
     }
